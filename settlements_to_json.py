@@ -2,7 +2,7 @@ from requests_html import HTML
 import re
 import json
 
-with open("settlements.html") as infile:
+with open("hrw_settlements.html") as infile:
     html = HTML(html=infile.read())
 
 trs = html.find("tbody tr")
@@ -39,5 +39,5 @@ for tr in trs[1:]:
 
     items.append(item)
 
-with open("settlements.json", "w") as outfile:
+with open("hrw_settlements.json", "w") as outfile:
     json.dump(items, outfile, indent=2)
