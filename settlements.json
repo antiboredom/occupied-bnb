@@ -1,0 +1,1253 @@
+[
+  {
+    "airbnb_id": null,
+    "hrw_id": "1",
+    "url": null,
+    "settlement": "Alfei Menashe",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "8610766",
+    "hrw_id": "2",
+    "url": "https://www.airbnb.com/rooms/8610766",
+    "settlement": "Alfei Menashe",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "3",
+    "url": null,
+    "settlement": "Alfei Menashe",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "20347170",
+    "hrw_id": "4",
+    "url": "https://www.airbnb.com/rooms/20347170",
+    "settlement": "Almon",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "5",
+    "url": null,
+    "settlement": "Almon",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "6",
+    "url": null,
+    "settlement": "Almon",
+    "description_israel": "Yes",
+    "neighborhood_israel": "Yes",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "21760943",
+    "hrw_id": "7",
+    "url": "https://www.airbnb.com/rooms/21760943",
+    "settlement": "Alon",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "15747681",
+    "hrw_id": "8",
+    "url": "https://www.airbnb.com/rooms/15747681",
+    "settlement": "Alon",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "23713860",
+    "hrw_id": "9",
+    "url": "https://www.airbnb.com/rooms/23713860",
+    "settlement": "Alon",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "20327888",
+    "hrw_id": "10",
+    "url": "https://www.airbnb.com/rooms/20327888",
+    "settlement": "Alon Shvut",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "14830464",
+    "hrw_id": "11",
+    "url": "https://www.airbnb.com/rooms/14830464",
+    "settlement": "Alon Shvut",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "19244896",
+    "hrw_id": "12",
+    "url": "https://www.airbnb.com/rooms/19244896",
+    "settlement": "Alon Shvut",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/9/2018"
+  },
+  {
+    "airbnb_id": "16182719",
+    "hrw_id": "13",
+    "url": "https://www.airbnb.com/rooms/16182719",
+    "settlement": "Alon Shvut",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "21799109",
+    "hrw_id": "14",
+    "url": "https://www.airbnb.com/rooms/21799109",
+    "settlement": "Ari'el",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "15",
+    "url": null,
+    "settlement": "Ari'el",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "8470765",
+    "hrw_id": "16",
+    "url": "https://www.airbnb.com/rooms/8470765",
+    "settlement": "Ari'el",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "23385737",
+    "hrw_id": "17",
+    "url": "https://www.airbnb.com/rooms/23385737",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/28/2018"
+  },
+  {
+    "airbnb_id": "14771847",
+    "hrw_id": "18",
+    "url": "https://www.airbnb.com/rooms/14771847",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "23520388",
+    "hrw_id": "19",
+    "url": "https://www.airbnb.com/rooms/23520388",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/10/2018"
+  },
+  {
+    "airbnb_id": "23543458",
+    "hrw_id": "20",
+    "url": "https://www.airbnb.com/rooms/23543458",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/10/2018"
+  },
+  {
+    "airbnb_id": "19765139",
+    "hrw_id": "21",
+    "url": "https://www.airbnb.com/rooms/19765139",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "17129473",
+    "hrw_id": "22",
+    "url": "https://www.airbnb.com/rooms/17129473",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/28/2018"
+  },
+  {
+    "airbnb_id": "22427804",
+    "hrw_id": "23",
+    "url": "https://www.airbnb.com/rooms/22427804",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/28/2018"
+  },
+  {
+    "airbnb_id": "22718142",
+    "hrw_id": "24",
+    "url": "https://www.airbnb.com/rooms/22718142",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "12649569",
+    "hrw_id": "25",
+    "url": "https://www.airbnb.com/rooms/12649569",
+    "settlement": "Avnat",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/10/2018"
+  },
+  {
+    "airbnb_id": "19034186",
+    "hrw_id": "26",
+    "url": "https://www.airbnb.com/rooms/19034186",
+    "settlement": "Barkan",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "16435134",
+    "hrw_id": "27",
+    "url": "https://www.airbnb.com/rooms/16435134",
+    "settlement": "Bat Ayin",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "21591579",
+    "hrw_id": "28",
+    "url": "https://www.airbnb.com/rooms/21591579",
+    "settlement": "Bat Ayin",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "16779098",
+    "hrw_id": "29",
+    "url": "https://www.airbnb.com/rooms/16779098",
+    "settlement": "Bat Ayin",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "24573768",
+    "hrw_id": "30",
+    "url": "https://www.airbnb.com/rooms/24573768",
+    "settlement": "Bat Ayin",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "20930629",
+    "hrw_id": "31",
+    "url": "https://www.airbnb.com/rooms/20930629",
+    "settlement": "Beit El",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "26004956",
+    "hrw_id": "32",
+    "url": "https://www.airbnb.com/rooms/26004956",
+    "settlement": "Beit Hagai",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/28/2018"
+  },
+  {
+    "airbnb_id": "458441",
+    "hrw_id": "33",
+    "url": "https://www.airbnb.com/rooms/458441",
+    "settlement": "Shilo",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "6741080",
+    "hrw_id": "34",
+    "url": "https://www.airbnb.com/rooms/6741080",
+    "settlement": "Dolev",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "18931125",
+    "hrw_id": "35",
+    "url": "https://www.airbnb.com/rooms/18931125",
+    "settlement": "Efrat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "14494620",
+    "hrw_id": "36",
+    "url": "https://www.airbnb.com/rooms/14494620",
+    "settlement": "Efrat",
+    "description_israel": "No",
+    "neighborhood_israel": "No, but the host puts Israel in his description.",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "23890392",
+    "hrw_id": "37",
+    "url": "https://www.airbnb.com/rooms/23890392",
+    "settlement": "Efrat",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "3202621",
+    "hrw_id": "38",
+    "url": "https://www.airbnb.com/rooms/3202621",
+    "settlement": "Efrat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "16390247",
+    "hrw_id": "39",
+    "url": "https://www.airbnb.com/rooms/16390247",
+    "settlement": "Efrat",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "21560698",
+    "hrw_id": "40",
+    "url": "https://www.airbnb.com/rooms/21560698",
+    "settlement": "Elazar",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "23184477",
+    "hrw_id": "41",
+    "url": "https://www.airbnb.com/rooms/23184477",
+    "settlement": "Eli",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "7772628",
+    "hrw_id": "42",
+    "url": "https://www.airbnb.com/rooms/7772628",
+    "settlement": "Eli",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "43",
+    "url": null,
+    "settlement": "Ets Efraim",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "15701542",
+    "hrw_id": "44",
+    "url": "https://www.airbnb.com/rooms/15701542",
+    "settlement": "Geva Binyamin",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "17344362",
+    "hrw_id": "45",
+    "url": "https://www.airbnb.com/rooms/17344362",
+    "settlement": "Geva Binyamin",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "17330670",
+    "hrw_id": "46",
+    "url": "https://www.airbnb.com/rooms/17330670",
+    "settlement": "Har Adar",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes, but in neighboorhood description, not Airbnb generated part.",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "8499789",
+    "hrw_id": "47",
+    "url": "https://www.airbnb.com/rooms/8499789",
+    "settlement": "Har Adar",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/2/2018"
+  },
+  {
+    "airbnb_id": "17467460",
+    "hrw_id": "48",
+    "url": "https://www.airbnb.com/rooms/17467460",
+    "settlement": "Har Adar",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "7423846",
+    "hrw_id": "49",
+    "url": "https://www.airbnb.com/rooms/7423846",
+    "settlement": "Har Adar",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "25607611",
+    "hrw_id": "50",
+    "url": "https://www.airbnb.com/rooms/25607611",
+    "settlement": "Har Adar",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "21744801",
+    "hrw_id": "51",
+    "url": "https://www.airbnb.com/rooms/21744801",
+    "settlement": "Har Bracha",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/13/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "52",
+    "url": null,
+    "settlement": "Har Bracha",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/13/2018"
+  },
+  {
+    "airbnb_id": "17834311",
+    "hrw_id": "53",
+    "url": "https://www.airbnb.com/rooms/17834311",
+    "settlement": "Hashmona'im",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/13/2018"
+  },
+  {
+    "airbnb_id": "21289255",
+    "hrw_id": "54",
+    "url": "https://www.airbnb.com/rooms/21289255",
+    "settlement": "Hashmona'im",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "3269949",
+    "hrw_id": "55",
+    "url": "https://www.airbnb.com/rooms/3269949",
+    "settlement": "Hashmona'im",
+    "description_israel": "Yes",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "24089753",
+    "hrw_id": "56",
+    "url": "https://www.airbnb.com/rooms/24089753",
+    "settlement": "Itamar",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "5/3/2018"
+  },
+  {
+    "airbnb_id": "25019309",
+    "hrw_id": "57",
+    "url": "https://www.airbnb.com/rooms/25019309",
+    "settlement": "Kalya",
+    "description_israel": "No",
+    "neighborhood_israel": "No, but the hosts say they live in \"Kalya, Israel\".",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "2257851",
+    "hrw_id": "58",
+    "url": "https://www.airbnb.com/rooms/2257851",
+    "settlement": "Kalya",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "21351936",
+    "hrw_id": "59",
+    "url": "https://www.airbnb.com/rooms/21351936",
+    "settlement": "Kalya",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "8139918",
+    "hrw_id": "60",
+    "url": "https://www.airbnb.com/rooms/8139918",
+    "settlement": "Karmei Zur",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/10/2018"
+  },
+  {
+    "airbnb_id": "24596380",
+    "hrw_id": "61",
+    "url": "https://www.airbnb.com/rooms/24596380",
+    "settlement": "Karnei Shomron",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/30/2018"
+  },
+  {
+    "airbnb_id": "25662442",
+    "hrw_id": "62",
+    "url": "https://www.airbnb.com/rooms/25662442",
+    "settlement": "Karnei Shomron",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "22709526",
+    "hrw_id": "63",
+    "url": "https://www.airbnb.com/rooms/22709526",
+    "settlement": "Karnei Shomron",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/27/2018"
+  },
+  {
+    "airbnb_id": "21362487",
+    "hrw_id": "64",
+    "url": "https://www.airbnb.com/rooms/21362487",
+    "settlement": "Kedar",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/13/2018"
+  },
+  {
+    "airbnb_id": "965096",
+    "hrw_id": "65",
+    "url": "https://www.airbnb.com/rooms/965096",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "10171223",
+    "hrw_id": "66",
+    "url": "https://www.airbnb.com/rooms/10171223",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "3/22/2018"
+  },
+  {
+    "airbnb_id": "864350",
+    "hrw_id": "67",
+    "url": "https://www.airbnb.com/rooms/864350",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "23329842",
+    "hrw_id": "68",
+    "url": "https://www.airbnb.com/rooms/23329842",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/27/2018"
+  },
+  {
+    "airbnb_id": "19223405",
+    "hrw_id": "69",
+    "url": "https://www.airbnb.com/rooms/19223405",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/27/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "70",
+    "url": null,
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "71",
+    "url": null,
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "72",
+    "url": null,
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "26240222",
+    "hrw_id": "73",
+    "url": "https://www.airbnb.com/rooms/26240222",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "8158581",
+    "hrw_id": "74",
+    "url": "https://www.airbnb.com/rooms/8158581",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "75",
+    "url": null,
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "2649136",
+    "hrw_id": "76",
+    "url": "https://www.airbnb.com/rooms/2649136",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "77",
+    "url": null,
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "24291173",
+    "hrw_id": "78",
+    "url": "https://www.airbnb.com/rooms/24291173",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "23600891",
+    "hrw_id": "79",
+    "url": "https://www.airbnb.com/rooms/23600891",
+    "settlement": "Kfar Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "22012136",
+    "hrw_id": "80",
+    "url": "https://www.airbnb.com/rooms/22012136",
+    "settlement": "Kfar Adumim",
+    "description_israel": "Yes",
+    "neighborhood_israel": "Yes",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "3181151",
+    "hrw_id": "81",
+    "url": "https://www.airbnb.com/rooms/3181151",
+    "settlement": "Kfar Etzion",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "8239851",
+    "hrw_id": "82",
+    "url": "https://www.airbnb.com/rooms/8239851",
+    "settlement": "Khavat Gil'ad outpost",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "13178486",
+    "hrw_id": "83",
+    "url": "https://www.airbnb.com/rooms/13178486",
+    "settlement": "Shilo/Kida outpost",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "18531063",
+    "hrw_id": "84",
+    "url": "https://www.airbnb.com/rooms/18531063",
+    "settlement": "Kiryat Arba",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/9/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "85",
+    "url": null,
+    "settlement": "Kiryat Arba",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/4/2018"
+  },
+  {
+    "airbnb_id": "9757197",
+    "hrw_id": "86",
+    "url": "https://www.airbnb.com/rooms/9757197",
+    "settlement": "Kokhav HaShahar",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/12/2018"
+  },
+  {
+    "airbnb_id": "25856031",
+    "hrw_id": "87",
+    "url": "https://www.airbnb.com/rooms/25856031",
+    "settlement": "Kokhav Ya'akov",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "25409385",
+    "hrw_id": "88",
+    "url": "https://www.airbnb.com/rooms/25409385",
+    "settlement": "Kokhav Ya'akov",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "5/23/2018"
+  },
+  {
+    "airbnb_id": "13057138",
+    "hrw_id": "89",
+    "url": "https://www.airbnb.com/rooms/13057138",
+    "settlement": "Ma'aleh Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "5/23/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "90",
+    "url": null,
+    "settlement": "Ma'aleh Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/13/2018"
+  },
+  {
+    "airbnb_id": "11052542",
+    "hrw_id": "91",
+    "url": "https://www.airbnb.com/rooms/11052542",
+    "settlement": "Ma'aleh Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "5/23/2018"
+  },
+  {
+    "airbnb_id": "2619102",
+    "hrw_id": "92",
+    "url": "https://www.airbnb.com/rooms/2619102",
+    "settlement": "Ma'aleh Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "5/23/2018"
+  },
+  {
+    "airbnb_id": "15002259",
+    "hrw_id": "93",
+    "url": "https://www.airbnb.com/rooms/15002259",
+    "settlement": "Ma'aleh Adumim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "5/23/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "94",
+    "url": null,
+    "settlement": "Ma'aleh Efraim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "5/22/2018"
+  },
+  {
+    "airbnb_id": "12333625",
+    "hrw_id": "95",
+    "url": "https://www.airbnb.com/rooms/12333625",
+    "settlement": "Ma'aleh Levona",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "5/22/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "96",
+    "url": null,
+    "settlement": "Ma'aleh Mikhmas",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "5/22/2018"
+  },
+  {
+    "airbnb_id": "18854760",
+    "hrw_id": "97",
+    "url": "https://www.airbnb.com/rooms/18854760",
+    "settlement": "Matityahu",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "9074384",
+    "hrw_id": "98",
+    "url": "https://www.airbnb.com/rooms/9074384",
+    "settlement": "Mevo Horon",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/30/2018"
+  },
+  {
+    "airbnb_id": "23337365",
+    "hrw_id": "99",
+    "url": "https://www.airbnb.com/rooms/23337365",
+    "settlement": "Migdal Oz",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "7/6/2018"
+  },
+  {
+    "airbnb_id": "24016632",
+    "hrw_id": "100",
+    "url": "https://www.airbnb.com/rooms/24016632",
+    "settlement": "Mitspe Shalem",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/20/2018"
+  },
+  {
+    "airbnb_id": "6680407",
+    "hrw_id": "101",
+    "url": "https://www.airbnb.com/rooms/6680407",
+    "settlement": "Mitzpe Yeriho",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/20/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "102",
+    "url": null,
+    "settlement": "Mitzpe Yeriho",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/20/2018"
+  },
+  {
+    "airbnb_id": "11295885",
+    "hrw_id": "103",
+    "url": "https://www.airbnb.com/rooms/11295885",
+    "settlement": "Mitzpe Yeriho",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/13/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "104",
+    "url": null,
+    "settlement": "Mitzpe Yeriho",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "105",
+    "url": null,
+    "settlement": "Mitzpe Yeriho",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "106",
+    "url": null,
+    "settlement": "Mitzpe Yeriho",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/12/2018"
+  },
+  {
+    "airbnb_id": "26294667",
+    "hrw_id": "107",
+    "url": "https://www.airbnb.com/rooms/26294667",
+    "settlement": "Modi'in Illit",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "108",
+    "url": null,
+    "settlement": "Modi'in Illit",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/30/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "109",
+    "url": null,
+    "settlement": "Netiv Hagdud/Gilgal",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/20/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "110",
+    "url": null,
+    "settlement": "Neve Daniel",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/28/2018"
+  },
+  {
+    "airbnb_id": "5224281",
+    "hrw_id": "111",
+    "url": "https://www.airbnb.com/rooms/5224281",
+    "settlement": "Neve Daniel",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/30/2018"
+  },
+  {
+    "airbnb_id": "9400720",
+    "hrw_id": "112",
+    "url": "https://www.airbnb.com/rooms/9400720",
+    "settlement": "Nili",
+    "description_israel": "Yes",
+    "neighborhood_israel": "Yes",
+    "date": "6/26/2018"
+  },
+  {
+    "airbnb_id": "8917005",
+    "hrw_id": "113",
+    "url": "https://www.airbnb.com/rooms/8917005",
+    "settlement": "Niran",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/30/2018"
+  },
+  {
+    "airbnb_id": "14442858",
+    "hrw_id": "114",
+    "url": "https://www.airbnb.com/rooms/14442858",
+    "settlement": "Nofei Prat",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "8161655",
+    "hrw_id": "115",
+    "url": "https://www.airbnb.com/rooms/8161655",
+    "settlement": "Nofei Prat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "9685547",
+    "hrw_id": "116",
+    "url": "https://www.airbnb.com/rooms/9685547",
+    "settlement": "Nofei Prat",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/19/2018"
+  },
+  {
+    "airbnb_id": "9288240",
+    "hrw_id": "117",
+    "url": "https://www.airbnb.com/rooms/9288240",
+    "settlement": "Nokdim",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/30/2018"
+  },
+  {
+    "airbnb_id": "18278160",
+    "hrw_id": "118",
+    "url": "https://www.airbnb.com/rooms/18278160",
+    "settlement": "Ofra",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "8064396",
+    "hrw_id": "119",
+    "url": "https://www.airbnb.com/rooms/8064396",
+    "settlement": "Ofra",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "6746907",
+    "hrw_id": "120",
+    "url": "https://www.airbnb.com/rooms/6746907",
+    "settlement": "Ofra",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "2948809",
+    "hrw_id": "121",
+    "url": "https://www.airbnb.com/rooms/2948809",
+    "settlement": "Oranit",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "28/6/18"
+  },
+  {
+    "airbnb_id": "13497914",
+    "hrw_id": "122",
+    "url": "https://www.airbnb.com/rooms/13497914",
+    "settlement": "Oranit",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "982778",
+    "hrw_id": "123",
+    "url": "https://www.airbnb.com/rooms/982778",
+    "settlement": "Oranit",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "7315703",
+    "hrw_id": "124",
+    "url": "https://www.airbnb.com/rooms/7315703",
+    "settlement": "Peza'el",
+    "description_israel": "Yes",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "18986220",
+    "hrw_id": "125",
+    "url": "https://www.airbnb.com/rooms/18986220",
+    "settlement": "Psagot",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "2/4/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "126",
+    "url": null,
+    "settlement": "Rehelim",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "25254987",
+    "hrw_id": "127",
+    "url": "https://www.airbnb.com/rooms/25254987",
+    "settlement": "Revava",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/27/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "128",
+    "url": null,
+    "settlement": "Rimonim",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "5/23/2018"
+  },
+  {
+    "airbnb_id": "20568355",
+    "hrw_id": "129",
+    "url": "https://www.airbnb.com/rooms/20568355",
+    "settlement": "Sde Boaz",
+    "description_israel": "Yes",
+    "neighborhood_israel": "No",
+    "date": "4/30/2018"
+  },
+  {
+    "airbnb_id": "12633761",
+    "hrw_id": "130",
+    "url": "https://www.airbnb.com/rooms/12633761",
+    "settlement": "Sha'are Tikva",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "10676388",
+    "hrw_id": "131",
+    "url": "https://www.airbnb.com/rooms/10676388",
+    "settlement": "Shiloh/Esh Kodesh outpost",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/5/2018"
+  },
+  {
+    "airbnb_id": "14535329",
+    "hrw_id": "132",
+    "url": "https://www.airbnb.com/rooms/14535329",
+    "settlement": "Tekoa",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/28/2018"
+  },
+  {
+    "airbnb_id": "11102961",
+    "hrw_id": "133",
+    "url": "https://www.airbnb.com/rooms/11102961",
+    "settlement": "Tekoa",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "6/28/2018"
+  },
+  {
+    "airbnb_id": null,
+    "hrw_id": "134",
+    "url": null,
+    "settlement": "Tekoa",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4.4.2018"
+  },
+  {
+    "airbnb_id": "6153516",
+    "hrw_id": "135",
+    "url": "https://www.airbnb.com/rooms/6153516",
+    "settlement": "Tekoa",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "14264224",
+    "hrw_id": "136",
+    "url": "https://www.airbnb.com/rooms/14264224",
+    "settlement": "Tekoa",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/23/2018"
+  },
+  {
+    "airbnb_id": "23412576",
+    "hrw_id": "137",
+    "url": "https://www.airbnb.com/rooms/23412576",
+    "settlement": "Tekoa",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "4/20/2018"
+  },
+  {
+    "airbnb_id": "18499545",
+    "hrw_id": "138",
+    "url": "https://www.airbnb.com/rooms/18499545",
+    "settlement": "Tekoa",
+    "description_israel": "No",
+    "neighborhood_israel": "Yes",
+    "date": "4/20/2018"
+  },
+  {
+    "airbnb_id": "11620402",
+    "hrw_id": "139",
+    "url": "https://www.airbnb.com/rooms/11620402",
+    "settlement": "Tomer",
+    "description_israel": "No",
+    "neighborhood_israel": "No",
+    "date": "6/5/2018"
+  }
+]
