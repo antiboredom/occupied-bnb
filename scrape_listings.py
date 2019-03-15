@@ -13,8 +13,13 @@ out = []
 
 for item in items:
     airbnb_id = item["airbnb_id"]
-    listing = api.get_listing_details(airbnb_id)
-    out.append(listing)
-    time.sleep(1)
+    try:
+        listing = api.get_listing_details(airbnb_id)
+        out.append(listing)
+        print('success', airbnb_id)
+        time.sleep(1)
+    except Exception as e:
+        print('failed', airbnb_id)
 
-with open('sett
+with open('settlements.json', 'w') as outfile:
+    json.dump(out, outfile, indent=2)

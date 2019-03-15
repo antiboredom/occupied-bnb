@@ -1,0 +1,24 @@
+with open("all_sentences.txt", "r") as infile:
+    lines = infile.read().split("\n")
+    
+lines = [l.strip() for l in lines]
+index = 0
+
+size(1920, 1080)
+padding = 120
+
+frame = 0
+
+for l in lines:
+    clear()
+    layout(align=LEFT)
+    font("Helvetica Neue", 70, weight='bold')
+    background(0)
+    fill(1)
+    t = text(l, 0, 0, WIDTH-padding*2, plot=False)
+    x = padding
+    y = HEIGHT/2 - t.bounds.y - t.bounds.h/2
+    text(l, x, y, WIDTH-padding*2)
+    export("text_frames/frame-{}.png".format(str(frame).zfill(4)))
+    frame += 1
+    
