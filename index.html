@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=yes' />
+
+  <title>Occupied BNB</title>
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      margin:0;
+      padding:0;
+      background-color: #000;
+      color: #fff;
+      font: 16px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: left;
+      align-content: space-evenly;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      /*width: 100%;*/
+      right: 0;
+      height: auto;
+      z-index: 999;
+      background-color: #000;
+      padding: 10px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: normal;
+      flex: 1;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 10px;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    section {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    .mapboxgl-popup {
+      max-width: 350px;
+    }
+
+    .mapboxgl-popup-content {
+      color: #fff;
+      background-color: #000;
+    }
+
+    .mapboxgl-popup img {
+      max-height: 300px;
+      max-width: 100%;
+    }
+
+    .mapboxgl-popup-close-button {
+      color: #fff;
+    }
+
+    .mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+      border-bottom-color: #000;
+    }
+
+    .mapboxgl-popup h3 {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+
+    .mapboxgl-popup p {
+      margin: 5px 0px;
+      padding: 0;
+      line-height: 1.1;
+    }
+
+    .mapboxgl-popup a {
+      color: #fff;
+    }
+
+    .marker {
+      width: 30px;
+      height: 30px;
+      box-shadow: 0px 0px 10px #000;
+    }
+
+    #map-overlay {
+      background: transparent;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Text animaton */
+
+    #text-app {
+      height: 100%;
+    }
+
+    .text-container {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    #text-holder {
+      padding: 10vw;
+      font-size: 4vw;
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+    .icon {
+      border: none;
+      background: none;
+      opacity: 0.4;
+      color: #fff;
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .icon:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    /* IMAGES */
+    .bnb-image {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+
+    .image-holder {
+      float: left;
+      width: 3.3333vw;
+      height: 2.3333vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #images {
+    }
+
+    .tooltip {
+      position: absolute;
+      z-index: 3;
+      border: 2px solid #000;
+    }
+
+    .tooltip img {
+      max-width: 40vw;
+      max-height: 40vh;
+      display: block;
+    }
+
+    .tooltip p {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      padding: 2px;
+      font-size: 12px;
+      display: flex;
+    }
+    .tooltip p span {
+      flex-grow: 1;
+      width: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Occupied AirBnB: rentals in Israeli settlements</h1>
+    <a href="#map">Map</a>
+    <a href="#text">Text</a>
+    <a href="#image">Image</a>
+  </nav>
+
+  <section>
+    <a name="map"></a>
+    <div id="map"></div>
+  </section>
+
+  <section>
+    <a name="text"></a>
+    <div id="text-app">
+      <div class="text-container">
+        <h1 id="text-holder">{{lines[index]}}</h1>
+        <div class="controls">
+          <button class="icon arrow" @click="increment">&lsaquo;</button>
+          <button @click="playing=!playing" class="icon">
+            <span v-if="playing">&#10074;&#10074;</span>
+            <span v-else>&#9658;</span>
+          </button>
+          <button class="icon arrow" @click="decrement">&rsaquo;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <a name="image"></a>
+    <div id="image-app">
+      <div id="images" @mousemove="updateTooltip" @mouseleave="setSelected(null)">
+        <div class="image-holder" v-for="img in images">
+          <img class="bnb-image" :src="img.src" @mouseenter="setSelected(img)">
+        </div>
+
+        <div class="tooltip" ref="tooltip" v-if="selected" :style="{top: ty + 'px', left: tx + 'px'}">
+          <div v-show="imgLoaded">
+            <img ref="bigImage" @load="onImgLoad" :src="selected.src.replace('thumbs', 'images')">
+            <p v-if="selected.desc" class="caption"><span>{{selected.desc}}</span></p>
+          </div>
+          <div v-if="!imgLoaded"><p>Loading</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3BsYXZpZ25lIiwiYSI6ImNpejFzZGx2NDAxbW0zM21uaGE5czI2cWkifQ.6p_ecnp-5wUHJeRm0kxKxQ';
+
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/splavigne/cjt9ku9630csh1fsfzhc7o119',
+      center: [35.0958150, 31.841923],
+      zoom: 9.0
+    });
+
+    // map.on('load', function () {
+    //   map.addLayer({
+    //     "id": "settlements",
+    //     "source": {
+    //       type: 'vector',
+    //       url: 'mapbox://splavigne.cjt93q3ql01r2mrlqg9yapfax-3r8bk'
+    //     },
+    //   });
+    // });
+
+    map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+    map.scrollZoom.disable();
+
+    function setMarker(p) {
+      let url = `https://www.airbnb.com/rooms/${p.id}`;
+      let html = `
+        <h3>
+          <a target="_blank" href="${url}">${p.name}</a>
+        </h3>
+        <p>
+          <b>Price: $${p.price}</b>
+        </p>
+        <p>
+          <a target="_blank" href="${url}"><img src="images/${p.images[0][0]}.jpg"></a>
+        <p>
+        <p>
+          ${p.summary}
+        <p>
+          <a target="_blank" href="${url}">View Listing</a>
+        </p>
+      `;
+
+      let icon = document.createElement('img');
+      icon.src = 'marker.png';
+      icon.style.width = '30px';
+      // icon.width = "30px";
+      let popup = new mapboxgl.Popup().setHTML(html);
+      let marker = new mapboxgl.Marker(icon)
+      // let marker = new mapboxgl.Marker()
+        .setLngLat([p.lng, p.lat])
+        .setPopup(popup)
+        .addTo(map);
+
+      popup.on('open', function(e){
+        let bounds = map.getBounds();
+        let h = bounds._ne.lat - bounds._sw.lat
+        map.easeTo({center: [p.lng, p.lat - h * .3]});
+      });
+    }
+
+    let nixed = [
+      522932432,
+      192125023,
+      459298663,
+      459314113,
+    ];
+
+    let imageApp = new Vue({
+      el: '#image-app',
+      data: {
+        images: [],
+        showTooltip: true,
+        tx: 0,
+        ty: 0,
+        selected: null,
+        listings: [],
+        imgLoaded: false,
+        imgWidth: 0,
+        imgHeight: 0,
+      },
+
+      created: function() {
+        fetch('clean_listings.json').then(response => response.json()).then((data) => {
+          let images = [];
+          data.forEach((d) => {
+            setMarker(d);
+
+            let desc = d.summary.split('.');
+            d.images.forEach((i) => {
+              let _desc = desc[Math.floor(Math.random()*desc.length)];
+              if (nixed.indexOf(i[0] == -1)) {
+                images.push({src: 'thumbs/' + i[0] + '.jpg', order: i[1], id: d.id, desc: _desc})
+              } else {
+                console.log('remove', i[0]);
+              }
+            });
+          });
+          images = images.sort((a, b) => {
+            return a.order - b.order;
+          });
+          this.images = images;
+        });
+      },
+
+      methods: {
+        updateTooltip: function(e) {
+          if (!this.$refs.tooltip || !this.selected) return false;
+
+          let tw = this.$refs.tooltip.clientWidth;
+          let th = this.$refs.tooltip.clientHeight;
+
+          if (e.clientX + tw > window.innerWidth - 10) {
+            this.tx = e.pageX - tw - 10;
+          } else {
+            this.tx = e.clientX + 10;
+          }
+          if (e.clientY + th > window.innerHeight - 10) {
+            this.ty = e.pageY - th - 10;
+          } else {
+            this.ty = e.pageY + 10;
+          }
+        },
+
+        onImgLoad: function(e) {
+          this.imgLoaded = true;
+        },
+
+        setSelected: function(src) {
+          this.selected = src;
+        }
+      }
+    });
+
+    let textApp = new Vue({
+      el: '#text-app',
+      data: {
+        index: 0,
+        lines: [],
+        playing: true,
+      },
+      created: function() {
+        fetch('lines.json').then(response => response.json()).then((lines) => {
+          this.lines = lines;
+          setInterval(this.play, 1000);
+        });
+      },
+      methods: {
+        play: function() {
+          if (this.playing) {
+            this.index++;
+            if (this.index == this.lines.length) this.index = 0;
+          }
+        },
+        increment: function() {
+          this.playing = false;
+          this.index++;
+          if (this.index == this.lines.length) this.index = 0;
+        },
+        decrement: function() {
+          this.playing = false;
+          this.index--;
+          if (this.index == -1) this.index = this.lines.length - 1;
+        },
+      }
+    });
+  </script>
+</body>
+
+</html>

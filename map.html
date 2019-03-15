@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Occupied BNB Map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .mapboxgl-popup {
+      max-width: 350px;
+      font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    .mapboxgl-popup img {
+      /* max-width: 200px; */
+      max-height: 300px;
+      max-width: 100%;
+    }
+
+    .mapboxgl-popup h3 {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+
+    .mapboxgl-popup p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .mapboxgl-popup a {
+      color: #000;
+    }
+
+    .marker {
+      width: 30px;
+      height: 30px;
+      box-shadow: 0px 0px 10px #000;
+    }
+
+    #map-overlay {
+      background: transparent;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <div id="map&#45;overlay" onClick="style.pointerEvents='none'"></div> -->
+  <div id='map'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3BsYXZpZ25lIiwiYSI6ImNpejFzZGx2NDAxbW0zM21uaGE5czI2cWkifQ.6p_ecnp-5wUHJeRm0kxKxQ';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      // style: 'mapbox://styles/splavigne/cjt7ygri21q6r1gmnmrbdwykd',
+      style: 'mapbox://styles/mapbox/satellite-streets-v10',
+      center: [35.0958150, 31.841923],
+      zoom: 9.2
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+    fetch('clean_listings.json').then(response => response.json()).then((listings) => {
+      listings.forEach(setMarker)
+    });
+
+    function setMarker(p) {
+      let url = `https://www.airbnb.com/rooms/${p.id}`;
+      let html = `
+        <h3>
+          <a target="_blank" href="${url}">${p.name}</a>
+        </h3>
+        <p>
+          <b>Price: $${p.price}</b>
+        </p>
+        <p>
+          <a target="_blank" href="${url}"><img src="images/${p.images[0][0]}.jpg"></a>
+        <p>
+        <p>
+          ${p.summary}
+        <p>
+          <a target="_blank" href="${url}">View Listing</a>
+        </p>
+      `;
+
+      let popup = new mapboxgl.Popup().setHTML(html);
+      // let marker = new mapboxgl.Marker(icon)
+      let marker = new mapboxgl.Marker()
+        .setLngLat([p.lng, p.lat])
+        .setPopup(popup)
+        .addTo(map);
+
+      popup.on('open', function(e){
+        let bounds = map.getBounds();
+        let h = bounds._ne.lat - bounds._sw.lat
+        map.easeTo({center: [p.lng, p.lat - h * .3]});
+      });
+
+    }
+  </script>
+
+</body>
+
+</html>
