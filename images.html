@@ -1,80 +1,42 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="utf-8">
-
-  <title>Occupied BNB Images</title>
-  <style>
-    body {
-      background-color: #000;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-    .bnb-image {
-      display: block;
-      width: 100%;
-      margin: 0;
-    }
-    .image-holder {
-      float: left;
-      width: 3.3333vw;
-      height: 2.3333vh;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    #images {
-    }
-    .tooltip {
-      position: absolute;
-      z-index: 3;
-      width: 33vw;
-      max-height: 50vh;
-      border: 2px solid #000;
-    }
-    .tooltip img {
-      display: block;
-      width: 100%;
-      /*height: 100%;*/
-      max-height: 45vh;
-    }
-    .tooltip p {
-      margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #fff;
-      padding: 2px;
-      font-size: 12px;
-    }
-  </style>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=yes' />
+  <title>Occupied BNB</title>
+  <link href='style.css' rel='stylesheet' />
 </head>
-
 <body>
 
-  <div id="image-app">
-    <div id="images" @mousemove="updateTooltip" @mouseleave="setSelected(null)">
-      <div class="image-holder" v-for="img in images">
-        <img class="bnb-image" :src="img.src" @mouseenter="setSelected(img)">
-      </div>
-
-      <div class="tooltip" ref="tooltip" v-if="selected" :style="{top: ty + 'px', left: tx + 'px'}">
-        <div v-show="imgLoaded">
-          <img ref="bigImage" @load="onImgLoad" :src="selected.src.replace('thumbs', 'images')">
-          <p v-if="selected.desc">{{selected.desc}}</p>
+  <section>
+    <a name="image"></a>
+    <div id="image-app">
+      <div id="images" @mousemove="updateTooltip" @mouseleave="setSelected(null)">
+        <div class="image-holder" v-for="img in images">
+          <img class="bnb-image" :src="img.src" @mouseenter="setSelected(img)">
         </div>
-        <div v-if="!imgLoaded"><p>Loading</p></div>
-      </div>
 
-      <!-- <div class="overlay"> -->
-      <!--   <img :src="selected.replace('thumbs', 'images')"> -->
-      <!-- </div> -->
+        <div class="tooltip" ref="tooltip" v-if="selected" :style="{top: ty + 'px', left: tx + 'px'}">
+          <div v-show="imgLoaded">
+            <img ref="bigImage" @load="onImgLoad" :src="selected.src.replace('thumbs', 'images')">
+            <p v-if="selected.desc" class="caption"><span>{{selected.desc}}</span></p>
+          </div>
+          <div v-if="!imgLoaded"><p>Loading</p></div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
   <script>
+    function isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+
+    let mobile = isMobileDevice();
+
     let nixed = [
       522932432,
       192125023,
@@ -124,15 +86,13 @@
           let tw = this.$refs.tooltip.clientWidth;
           let th = this.$refs.tooltip.clientHeight;
 
-          if (e.pageX + tw > window.innerWidth - 10) {
+          if (e.clientX + tw > window.innerWidth - 10) {
             this.tx = e.pageX - tw - 10;
-            // this.tx = window.innerWidth - tw - 10;
           } else {
-            this.tx = e.pageX + 10;
+            this.tx = e.clientX + 10;
           }
-          if (e.pageY + th > window.innerHeight - 10) {
+          if (e.clientY + th > window.innerHeight - 10) {
             this.ty = e.pageY - th - 10;
-            // this.ty = window.innerHeight - th - 10;
           } else {
             this.ty = e.pageY + 10;
           }
@@ -143,10 +103,11 @@
         },
 
         setSelected: function(src) {
-          this.selected = src;
+          if (!mobile) this.selected = src;
         }
       }
-    })
+    });
+
   </script>
 </body>
 
