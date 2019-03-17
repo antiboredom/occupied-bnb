@@ -11,6 +11,7 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <link href='style.css' rel='stylesheet' />
 </head>
+
 <body>
   <nav>
     <h1 class="logo">Occupied BnB<span>Airbnb rentals in Israeli settlements</span></h1>
@@ -54,7 +55,9 @@
             <img ref="bigImage" @load="onImgLoad" :src="selected.src.replace('thumbs', 'images')">
             <p v-if="selected.desc" class="caption"><span>{{selected.desc}}</span></p>
           </div>
-          <div v-if="!imgLoaded"><p>Loading</p></div>
+          <div v-if="!imgLoaded">
+            <p>Loading</p>
+          </div>
         </div>
       </div>
     </div>
@@ -87,6 +90,14 @@
 
     function setMarker(p) {
       let url = `https://www.airbnb.com/rooms/${p.id}`;
+      let img = '';
+      if (p.images[0]) {
+        img = `
+        <p>
+          <a target="_blank" href="${url}"><img src="images/${p.images[0][0]}.jpg"></a>
+        <p>
+        `;
+      }
       let html = `
         <h3>
           <a target="_blank" href="${url}">${p.name}</a>
@@ -94,9 +105,7 @@
         <p>
           <b>Price: $${p.price}</b>
         </p>
-        <p>
-          <a target="_blank" href="${url}"><img src="images/${p.images[0][0]}.jpg"></a>
-        <p>
+        ${img}
         <p>
           ${p.summary}
         <p>
@@ -106,19 +115,20 @@
 
       let icon = document.createElement('img');
       icon.src = 'marker.png';
-      icon.style.width = '30px';
-      // icon.width = "30px";
+      icon.style.width = '25px';
       let popup = new mapboxgl.Popup().setHTML(html);
       let marker = new mapboxgl.Marker(icon)
-      // let marker = new mapboxgl.Marker()
+        // let marker = new mapboxgl.Marker()
         .setLngLat([p.lng, p.lat])
         .setPopup(popup)
         .addTo(map);
 
-      popup.on('open', function(e){
+      popup.on('open', function(e) {
         let bounds = map.getBounds();
         let h = bounds._ne.lat - bounds._sw.lat
-        map.easeTo({center: [p.lng, p.lat - h * .3]});
+        map.easeTo({
+          center: [p.lng, p.lat - h * .3]
+        });
       });
     }
 
@@ -140,18 +150,24 @@
         fetch('clean_listings.json').then(response => response.json()).then((data) => {
           let images = [];
           data.forEach((d) => {
-            // setMarker(d);
-
+            setMarker(d);
             let desc = d.summary.split('.');
             d.images.forEach((i) => {
-              let _desc = desc[Math.floor(Math.random()*desc.length)];
-              images.push({src: 'thumbs/' + i[0] + '.jpg', order: i[1], id: d.id, desc: _desc})
+              let _desc = desc[Math.floor(Math.random() * desc.length)];
+              images.push({
+                src: 'thumbs/' + i[0] + '.jpg',
+                order: i[1],
+                id: d.id,
+                desc: _desc
+              })
             });
           });
           images = images.sort((a, b) => {
             return a.order - b.order;
           });
           this.images = images;
+        }).catch(function(e) {
+          console.log("error", e);
         });
       },
 

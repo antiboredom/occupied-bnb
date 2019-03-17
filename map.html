@@ -30,6 +30,14 @@
 
     function setMarker(p) {
       let url = `https://www.airbnb.com/rooms/${p.id}`;
+      let img = '';
+      if (p.images[0]) {
+        img = `
+        <p>
+          <a target="_blank" href="${url}"><img src="images/${p.images[0][0]}.jpg"></a>
+        <p>
+        `;
+      }
       let html = `
         <h3>
           <a target="_blank" href="${url}">${p.name}</a>
@@ -37,9 +45,7 @@
         <p>
           <b>Price: $${p.price}</b>
         </p>
-        <p>
-          <a target="_blank" href="${url}"><img src="images/${p.images[0][0]}.jpg"></a>
-        <p>
+        ${img}
         <p>
           ${p.summary}
         <p>
@@ -49,8 +55,7 @@
 
       let icon = document.createElement('img');
       icon.src = 'marker.png';
-      icon.style.width = '30px';
-      // icon.width = "30px";
+      icon.style.width = '25px';
       let popup = new mapboxgl.Popup().setHTML(html);
       let marker = new mapboxgl.Marker(icon)
         // let marker = new mapboxgl.Marker()
@@ -71,6 +76,8 @@
     map.on('load', function(e) {
       fetch('clean_listings.json').then(response => response.json()).then((data) => {
         data.forEach(setMarker);
+      }).catch(function(e){
+        console.log(e);
       });
     });
 
