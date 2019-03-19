@@ -44,7 +44,11 @@ bad_images = [
     "images/522932954.jpg",
     "images/81556401.jpg",
     "images/427601367.jpg",
-    "images/522917413.jpg"
+    "images/522917413.jpg",
+    "images/416002090.jpg",
+    "images/522917413.jpg",
+    "images/522921897.jpg",
+    "images/204792558.jpg",
 ]
 
 bad_image_ids = [int(i.replace('images/', '').replace('.jpg', '')) for i in bad_images]
